@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <div class="calendario">
+        <h2>Calendário</h2>
+        <!-- Exemplo de calendário simplificado -->
+        <table>
+            <tr>
+                <th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SAB</th>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
+            </tr>
+            <!-- Restante do calendário -->
+        </table>
+    </div>
+
+    <div class="lembrete">
+        <h2>Lembretes</h2>
+        <ul>
+            <li>Sorteio toda sexta-feira</li>
+            <li>Atualize sua tag mensalmente</li>
+        </ul>
+    </div>
+
+    <div class="botoes">
+        <a href="/sorteio"><button>Sorteio</button></a>
+        <a href="/ajuda"><button>Ajuda</button></a>
+        <a href="/tag"><button>Tag</button></a>
+    </div>
+</div>
+{% endblock %}
